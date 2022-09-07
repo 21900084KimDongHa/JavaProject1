@@ -9,6 +9,9 @@ public class main {
         String[] word = new String[100];
         String[] mean = new String[100];
         while(count == 1){
+
+            //new WordManager().start();
+
             //System.out.println(t+"\n");
             //System.out.println(word[t]);
             System.out.println("*** 영단어 마스터 ***\n");
