@@ -1,9 +1,17 @@
-public class word {
+
+public class Word {
     private int id;
     private int lv;
     private String word;
     private String mean;
 
+    Word(){}
+    Word(int id, int lv, String word, String mean){
+        this.id = id;
+        this.lv = lv;
+        this.word = word;
+        this.mean = mean;
+    }
     public int getId() {
         return id;
     }
@@ -34,5 +42,13 @@ public class word {
 
     public void setMean(String mean) {
         this.mean = mean;
+    }
+
+    public String toString(){
+
+        String slv = "";
+        for(int i=0;i<lv;i++) slv += "*";
+        String str = String.format("%-3s", slv) + String.format("%15s", word) + "  " + mean;
+        return str;
     }
 }
