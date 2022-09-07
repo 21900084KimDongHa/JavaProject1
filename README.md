@@ -1,4 +1,4 @@
-## 1. 설치한 IDE의 이름과 실행 화면을 캡쳐했는가? <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/a1.png?raw=true" width = "200"> <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/a2.png?raw=true" width = "200">
+## 1. 설치한 IDE의 이름과 실행 화면을 캡쳐했는가? <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/a1.png?raw=true" width = "100"> <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/a2.png?raw=true" width = "200">
 ## 2. 최소한 클래스 3개 & 인터페이스 1개 만들었는가?
 ## 3. 새 프로젝트가 올라간 자신의 github repo url 은?
 ## 4. commit 수는 최소한 3회 이상인가?
