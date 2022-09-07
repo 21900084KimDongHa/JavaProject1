@@ -4,7 +4,7 @@
 ## 4. commit 수는 최소한 3회 이상인가? <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/d1.png?raw=true" width = "200"> <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/d2.png?raw=true" width = "200">
 ## 5. [4. 단어 추가] 메뉴에서 새로운 단어 추가 잘 실행되는가? <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/e1.png?raw=true" width = "200">
 ## 6. 위 실행 화면 캡쳐 이미지를 github에 올리고, Readme.md에 연결했는가? 네
-## 7. 추가된 단어들이 [1. 모든 단어보기] 메뉴에서 제대로 출력되는가?
-## 8. 위 실행 화면 캡쳐 이미지를 github에 올리고, Readme.md에 연결했는가?
+## 7. 추가된 단어들이 [1. 모든 단어보기] 메뉴에서 제대로 출력되는가? <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/g1.png?raw=true" width = "200">
+## 8. 위 실행 화면 캡쳐 이미지를 github에 올리고, Readme.md에 연결했는가? 네
 ## 9. [0. 나가기] 메뉴가 잘 실행되는가?
 ##10. 현재까지 프로젝트를 구현하면서 소감, 어려움, 또는 건의사항을 적었는가?
