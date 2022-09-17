@@ -1,9 +1,12 @@
 
+
 public class Word {
+
     private int id;
     private int lv;
     private String word;
     private String mean;
+
 
     Word(){}
     Word(int id, int lv, String word, String mean){
@@ -47,8 +50,10 @@ public class Word {
     public String toString(){
 
         String slv = "";
-        for(int i=0;i<lv;i++) slv += "*";
-        String str = String.format("%-3s", slv) + String.format("%15s", word) + "  " + mean;
+        for(int i=0; i<lv; i++)
+            slv += "*";
+        String str = String.format("%-3s", slv) + String.format("%15s", word) + "   " + mean; // 왼쪽 정렬을 해야하기 때문에 -3
+
         return str;
     }
 }
