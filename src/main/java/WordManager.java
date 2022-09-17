@@ -43,7 +43,7 @@ public class WordManager {
                 wordCRUD.addWord();
             }
             else if (menu == 5){
-                wordCRUD.updateItem();
+                wordCRUD.updateWord();
                 /*
 
                 String w = s.next();
@@ -57,15 +57,14 @@ public class WordManager {
                  */
             }
             else if (menu == 6){
+                wordCRUD.deleteWord();
                 /*
-
                 //1번 나오고
                 System.out.print("=> 삭제할 번호 선택 : ");
                 int n = s.nextInt();
                 System.out.print("=> 정말로 삭제하실래요?(Y/n)");
                 String u = s.next();
                 System.out.println("선택한 단어 삭제 완료 !!!");
-
                  */
             }
             else if (menu == 7){

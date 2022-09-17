@@ -22,16 +22,6 @@ public class WordCRUD implements ICRUD{
 
         return new Word(0, lv, word, mean);
     }
-    public Object search(){
-        /*
-        System.out.print("검색할 단어 입력 : ");
-        String word = s.next();
-        return new Word();
-
-         */
-        return 0;
-    }
-
 
     public Object del() {
         return 0;
@@ -86,7 +76,7 @@ public class WordCRUD implements ICRUD{
         return idlist;
     }
 
-    public void updateItem() {
+    public void updateWord() {
         System.out.print("=> 수정할 단어 검색 : ");
         String keyword = s.next();
         ArrayList<Integer> idlist = this.listAll(keyword);
@@ -98,5 +88,25 @@ public class WordCRUD implements ICRUD{
         Word word = list.get(idlist.get(id-1));
         word.setMean(mean);
         System.out.println("단어 수정이 성공적으로 되었습니다!!");
+    }
+
+    public void deleteWord() {
+        System.out.print("=> 삭제할 단어 검색 : ");
+        String keyword = s.next();
+        ArrayList<Integer> idlist = this.listAll(keyword);
+        System.out.print("=> 삭제할 번호 선택 : ");
+        int id = s.nextInt();
+        s.nextLine();
+
+        System.out.print("=> 정말로 삭제하실래요?(Y/n) ");
+        String ans = s.next();
+        if(ans.equalsIgnoreCase("Y")){
+            list.remove((int)idlist.get(id-1));
+            System.out.println("선택한 단어 삭제 완료 !!!");
+        }
+        else{
+            System.out.println("취소되었습니다. ");
+        }
+
     }
 }
