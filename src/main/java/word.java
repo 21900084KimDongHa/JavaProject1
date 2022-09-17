@@ -56,4 +56,8 @@ public class Word {
 
         return str;
     }
+
+    public String toFileString(){
+        return this.lv + "|" + this.word + this.mean;
+    }
 }

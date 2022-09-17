@@ -69,6 +69,7 @@ public class WordManager {
                  */
             }
             else if (menu == 7){
+                wordCRUD.saveFile();
                 /*
                 System.out.println("모든 단어 파일 저장 완료 !!!");
 
