@@ -12,4 +12,4 @@
 ## [2. 수준별 단어보기] 메뉴 선택시 실행 결과 <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_3.png?raw=true" width = "200">
 ## [3. 단어 검색] 메뉴 선택시 실행 결과 <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_5.png?raw=true" width ="200">
 ## [5. 단어 수정] 메뉴 선택시 실행 결과 <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_7_1.png?raw=true" width = "200"> <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_7_2.png?raw=true" width = "200">
-## [6. 단어 삭제] 메뉴 선택시 실행 결과 <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_9_1.png?raw=true" width = "100">
+## [6. 단어 삭제] 메뉴 선택시 실행 결과 <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_9_1.png?raw=true" width = "200"> <img src = "https://github.com/21900084KimDongHa/JavaProject1/blob/master/Screenshot/p2_9_2.png?raw=true" width = "200">
