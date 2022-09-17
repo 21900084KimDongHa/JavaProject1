@@ -76,7 +76,6 @@ public class WordManager {
             }
             else if (menu == 0) {
                 System.out.println("프로그램 종료! 다음에 만나요~\n");
-                //System.exit(0);
                 break;
             }
             else{

@@ -16,7 +16,7 @@ public class WordCRUD implements ICRUD{
         System.out.print("=> 난이도(1,2,3) & 새 단 입력 : ");
         int lv = s.nextInt();
         String word = s.next();
-
+        s.nextLine();
         System.out.print("뜻 입력 : ");
         String mean = s.nextLine();
 
@@ -69,7 +69,34 @@ public class WordCRUD implements ICRUD{
         System.out.println("----------------------");
     }
 
+    public ArrayList<Integer> listAll(String keyword){
+        ArrayList<Integer> idlist = new ArrayList<>();
+        int j = 0;
+        System.out.println("----------------------");
+        for(int i=0; i <list.size();i++){
+            String word = list.get(i).getWord();
+            if(!word.contains(keyword)) // 해당하는 키워드가 포항되어 있다면
+                continue;
+            System.out.print((j+1) + "  "); // 출력
+            System.out.println(list.get(i).toString());
+            idlist.add(i);
+            j++;
+        }
+        System.out.println("----------------------");
+        return idlist;
+    }
+
     public void updateItem() {
         System.out.print("=> 수정할 단어 검색 : ");
+        String keyword = s.next();
+        ArrayList<Integer> idlist = this.listAll(keyword);
+        System.out.print("=> 수정할 번호 선택 : ");
+        int id = s.nextInt();
+        s.nextLine();
+        System.out.print("=> 뜻 입력 : ");
+        String mean = s.nextLine();
+        Word word = list.get(idlist.get(id-1));
+        word.setMean(mean);
+        System.out.println("단어 수정이 성공적으로 되었습니다!!");
     }
 }
