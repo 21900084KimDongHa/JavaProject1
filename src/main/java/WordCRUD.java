@@ -1,11 +1,13 @@
+import java.io.*;
+import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.io.BufferedReader;
 public class WordCRUD implements ICRUD{
 
     ArrayList<Word> list;
     Scanner s;
-
+    final String fname = "JavaProject1.txt";
 
     WordCRUD(Scanner s) {
         list = new ArrayList<>();
@@ -100,13 +102,37 @@ public class WordCRUD implements ICRUD{
 
         System.out.print("=> 정말로 삭제하실래요?(Y/n) ");
         String ans = s.next();
-        if(ans.equalsIgnoreCase("Y")){
-            list.remove((int)idlist.get(id-1));
+        if (ans.equalsIgnoreCase("Y")) {
+            list.remove((int) idlist.get(id - 1)); // idlist 는 객체로 선언했기 때문에 int형으로 만들어서 remove의 인덱스 값으로 변경해준다.
             System.out.println("선택한 단어 삭제 완료 !!!");
-        }
-        else{
+        } else {
             System.out.println("취소되었습니다. ");
         }
-
     }
+
+    public void loadFile(){
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fname));
+            String line;
+            int count = 0;
+
+            while(true){
+                line = br.readLine();
+                if(line == null)
+                    break;
+                String data[] = line.split("\\|"); // |앞에 \\를 넣어야 버티컬바 라는 문자를 통해 쪼개기를 하겠다라는 의미
+                int lv = Integer.parseInt(data[0]);
+                String word = data[1];
+                String mean = data[2];
+                list.add(new Word(0, lv, word, mean));
+                count++;
+            }
+            br.close();
+            System.out.println("=> " + count + "개 단어 로딩 완료!");
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
