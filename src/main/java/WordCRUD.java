@@ -25,13 +25,6 @@ public class WordCRUD implements ICRUD{
         return new Word(0, lv, word, mean);
     }
 
-    public Object del() {
-        return 0;
-    }
-
-    public void searchWord(){
-
-    }
     public void addWord(){
         Word one = (Word)add();
         list.add(one);
@@ -67,7 +60,7 @@ public class WordCRUD implements ICRUD{
         System.out.println("----------------------");
         for(int i=0; i <list.size();i++){
             String word = list.get(i).getWord();
-            if(!word.contains(keyword)) // 해당하는 키워드가 포항되어 있다면
+            if(!word.contains(keyword)) // 해당하는 키워드가 포함되어 있다면
                 continue;
             System.out.print((j+1) + "  "); // 출력
             System.out.println(list.get(i).toString());
@@ -76,6 +69,19 @@ public class WordCRUD implements ICRUD{
         }
         System.out.println("----------------------");
         return idlist;
+    }
+
+    public void listAll(int lv) {
+        int j = 0;
+        System.out.println("----------------------");
+        for (int i = 0; i < list.size(); i++) {
+            int ilv = list.get(i).getLv();
+            if (ilv != lv)
+                continue;
+            System.out.print((j + 1) + "  "); // 출력
+            System.out.println(list.get(i).toString());
+            j++;
+        }
     }
 
     public void updateWord() {
@@ -146,5 +152,17 @@ public class WordCRUD implements ICRUD{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void searchLvWord() {
+        System.out.print("=> 레벨(1:초급, 2:중급, 3:고급)선택 : ");
+        int lv = s.nextInt();
+        listAll(lv);
+    }
+
+    public void searchWord() {
+        System.out.print("=> 검색할 단어 입력 : ");
+        String keyword = s.next();
+        listAll(keyword);
     }
 }

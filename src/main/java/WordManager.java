@@ -33,47 +33,22 @@ public class WordManager {
                 wordCRUD.listAll();
             }
             else if (menu == 2){
-
+                wordCRUD.searchLvWord();
             }
             else if (menu == 3){
-
-                //w에 속한 단어 출력
-
+                wordCRUD.searchWord();
             }
             else if (menu == 4){
                 wordCRUD.addWord();
             }
             else if (menu == 5){
                 wordCRUD.updateWord();
-                /*
-
-                String w = s.next();
-                // 1번 나오고
-                System.out.print("수정할 번호 선택 : ");
-                int n = s.nextInt();
-                System.out.print("뜻 입력 : ");
-                String u = s.nextLine();
-                System.out.println("단어 수정이 성공적으로 되었습니다!!");
-
-                 */
             }
             else if (menu == 6){
                 wordCRUD.deleteWord();
-                /*
-                //1번 나오고
-                System.out.print("=> 삭제할 번호 선택 : ");
-                int n = s.nextInt();
-                System.out.print("=> 정말로 삭제하실래요?(Y/n)");
-                String u = s.next();
-                System.out.println("선택한 단어 삭제 완료 !!!");
-                 */
             }
             else if (menu == 7){
                 wordCRUD.saveFile();
-                /*
-                System.out.println("모든 단어 파일 저장 완료 !!!");
-
-                 */
             }
             else if (menu == 0) {
                 System.out.println("프로그램 종료! 다음에 만나요~\n");
